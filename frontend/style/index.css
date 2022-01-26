@@ -5,21 +5,30 @@ html {
   background-color: var(--background);
   color: var(--foreground);
   font-family: "Oxygen";
+  height: 100vh;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 99vh;
 }
 
-#bar {
+#top,
+#bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
 
+#top {
   border-bottom: var(--foreground) 3px solid;
+}
+
+#bottom {
+  border-top: var(--foreground) 3px solid;
 }
 
 .controls {
