@@ -4,7 +4,7 @@
   "description": "Backend for the rustmine project.",
   "main": "index.node",
   "scripts": {
-    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build": "cargo-cp-artifact -nc dist/index.node -- cargo build --message-format=json-render-diagnostics",
     "build-debug": "yarn run build --",
     "build-release": "yarn run build -- --release",
     "install": "yarn run build-release",
@@ -14,5 +14,6 @@
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "cargo-cp-artifact": "^0.1"
-  }
+  },
+  "dependencies": {}
 }

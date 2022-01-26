@@ -1,6 +1,12 @@
 const fs = require("fs");
+const backend = require("../backend/dist/index.node");
 
 window.addEventListener("DOMContentLoaded", () => {
+  initTranslation();
+  console.log(backend.mojangAccountStatus());
+});
+
+const initTranslation = () => {
   const translations = new Map(Object.entries(
     JSON.parse(
       fs.readFileSync("./frontend/translation/en_US.json", "utf8"),
@@ -12,4 +18,4 @@ window.addEventListener("DOMContentLoaded", () => {
       element.innerHTML = translations.get(element.id);
     }
   });
-});
+};
