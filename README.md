@@ -10,9 +10,9 @@ this program, since I only did this for fun.
 
 ## What's the plan?
 
-I will create the UI using [Electron](https://electron.io). For the backend
-actions, such as downloading libraries, listing versions, etc, I will use Rust
-with [Neon Bindings](https://neon-bindings.com/).
+I will create the UI using [Electron](https://www.electronjs.org/). For the
+backend actions, such as downloading libraries, listing versions, etc, I will
+use Rust with [Neon Bindings](https://neon-bindings.com/).
 
 ## Development
 
