@@ -7,13 +7,19 @@ html {
   font-family: "Oxygen";
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: #908caa;
+  border-bottom: var(--foreground) 3px solid;
 }
 
 .controls {
@@ -29,4 +35,8 @@ html {
 
 .button:hover {
   background-color: var(--color1);
+}
+
+#instances {
+  padding: 1vh 1vw 1vh 1vw;
 }

@@ -5,9 +5,9 @@
   "main": "index.node",
   "scripts": {
     "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
-    "build-debug": "npm run build --",
-    "build-release": "npm run build -- --release",
-    "install": "npm run build-release",
+    "build-debug": "yarn run build --",
+    "build-release": "yarn run build -- --release",
+    "install": "yarn run build-release",
     "test": "cargo test"
   },
   "author": "sourTaste000",
