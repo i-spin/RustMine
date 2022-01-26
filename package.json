@@ -1,0 +1,16 @@
+{
+  "name": "rustmine",
+  "version": "0.0.0",
+  "description": "Minecraft Launcher Built With Rust + Electron",
+  "main": "frontend/main.js",
+  "author": "sourTaste000",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5"
+  },
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder -mwl"
+  }
+}
