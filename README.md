@@ -56,3 +56,7 @@ them seem smart, without critically examining whether it makes sense or not.
 With experience comes a certain appreciation of tradeoffs you take when building
 software and while Electron is not the perfect solution for every use case, it's
 certainly good enough for what I was trying to achieve with this app.
+
+### Why not tauri???
+
+[*](https://youtu.be/jyTA33HQZLA?t=95)
