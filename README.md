@@ -2,27 +2,17 @@
 
 A Minecraft launcher written in Rust, with an Electron frontend.
 
-## Why???
+## Why?
 
 I thought it would be fun to use two of my most familiar languages, Rust and
 JavaScript, to create a Minecraft launcher. I will most likely to _not_ finish
 this program, since I only did this for fun.
 
-## What's the plan?
+## What is the plan?
 
 I will create the UI using [Electron](https://www.electronjs.org/). For the
 backend actions, such as downloading libraries, listing versions, etc, I will
 use Rust with [Neon Bindings](https://neon-bindings.com/).
-
-## Development
-
-1. Clone this repository.
-2. Run `yarn .` to install the dependencies for the frontend.
-3. Then, run `yarn .` inside the `backend` folder to install the dependencies
-   for the backend.
-4. Build the backend by running `yarn build-release` inside the `backend`
-   folder.
-5. Run `yarn dev` to start the frontend.
 
 ## Roadmap
 
@@ -39,6 +29,16 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
   - [ ] Multiple Instances
   - [ ] Instance Specific Settings
   - [ ] Multiple Accounts
+
+## Development
+
+1. Clone this repository.
+2. Run `yarn .` to install the dependencies for the frontend.
+3. Then, run `yarn .` inside the `backend` folder to install the dependencies
+   for the backend.
+4. Build the backend by running `yarn build-release` inside the `backend`
+   folder.
+5. Run `yarn dev` to start the frontend.
 
 ## What if I am religiously opposed to using Electron?
 
