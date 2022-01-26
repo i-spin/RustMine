@@ -24,6 +24,22 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
    folder.
 5. Run `yarn dev` to start the frontend.
 
+## Roadmap
+
+- [ ] Frontend
+  - [ ] Main Page
+- [ ] Backend
+  - [ ] Mojang Login
+  - [ ] Microsoft Login
+  - [ ] Download Libraries
+  - [ ] Download `minecraft.jar`
+  - [ ] Authenticating
+  - [ ] Launching Minecraft
+- [ ] Extra Stuff
+  - [ ] Multiple Instances
+  - [ ] Instance Specific Settings
+  - [ ] Multiple Accounts
+
 ## What if I am religiously opposed to using Electron?
 
 Then you are not the target audience of this program. See
@@ -60,3 +76,20 @@ certainly good enough for what I was trying to achieve with this app.
 ### Why not tauri???
 
 [*](https://youtu.be/jyTA33HQZLA?t=95)
+
+## License
+
+RustMine, a Minecraft launcher written in Rust, with an Electron frontend.
+Copyright (C) 2022 sourTaste000
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along
+with this program. If not, see <https://www.gnu.org/licenses/>.
