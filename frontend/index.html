@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-  </body>
-  <script src="./renderer.js" />
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/index.css">
+  <title>RustMine</title>
+</head>
+
+<body>
+  <div id="bar">
+    <div class="controls">
+      <p class="button" id="add-instance"></p>
+      <p class="button" id="folders"></p>
+      <p class="button" id="settings"></p>
+      <p class="button" id="help"></p>
+      <p class="button" id="update"></p>
+    </div>
+    <div class="button" id="account"></div>
+  </div>
+</body>
+
 </html>
