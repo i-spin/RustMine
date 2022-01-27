@@ -15,5 +15,6 @@
     "pack": "./node_modules/.bin/electron-builder -mwl",
     "run-electron": "electron .",
     "compile-backend": "cd backend && yarn build-release"
-  }
+  },
+  "dependencies": {}
 }

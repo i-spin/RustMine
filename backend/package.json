@@ -7,7 +7,6 @@
     "build": "cargo-cp-artifact -nc dist/index.node -- cargo build --message-format=json-render-diagnostics",
     "build-debug": "yarn run build",
     "build-release": "yarn run build --release",
-    "install": "yarn run build-release",
     "test": "cargo test"
   },
   "author": "sourTaste000",
