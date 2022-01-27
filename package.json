@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "yarn compile-backend && yarn run-electron",
-    "pack": "electron-builder -mwl",
+    "pack": "./node_modules/.bin/electron-builder -mwl",
     "run-electron": "electron .",
     "compile-backend": "cd backend && yarn build-release"
   }
