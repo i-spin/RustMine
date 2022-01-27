@@ -1,14 +1,12 @@
 mod status_check;
 
+use crate::status_check::*;
 use neon::prelude::*;
-
-fn hello(mut cx: FunctionContext) -> JsResult<JsString> {
-    Ok(cx.string("hello node"))
-}
 
 #[neon::main]
 fn main(mut cx: ModuleContext) -> NeonResult<()> {
-    cx.export_function("hello", hello)?;
-    cx.export_function("mojangAccountStatus", status_check::mojang_account_status)?;
+    cx.export_function("mojangAccountStatus", mojang_auth_status)?;
+    cx.export_function("mojangSessionStatus", mojang_session_status)?;
+    cx.export_function("mojangTextureStatus", mojang_texture_status)?;
     Ok(())
 }

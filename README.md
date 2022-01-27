@@ -35,12 +35,10 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
 ## Development
 
 1. Clone this repository.
-2. Run `yarn .` to install the dependencies for the frontend.
-3. Then, run `yarn .` inside the `backend` folder to install the dependencies
-   for the backend.
-4. Build the backend by running `yarn build-release` inside the `backend`
-   folder.
-5. Run `yarn dev` to start the frontend.
+2. Run `yarn` to install the dependencies for the frontend.
+3. Then, run `yarn` inside the `backend` folder to install the dependencies for
+   the backend.
+4. Run `yarn dev` in the root folder of this project to start the app.
 
 ## What if I am religiously opposed to using Electron?
 
@@ -66,7 +64,6 @@ them seem smart, without critically examining whether it makes sense or not.
 - It provides a low barrier to entry for contributors
 - It lets us easily build and deploy to all major desktop platforms (various
   Linux distros, MacOS, Windows)
-- It lets us use React for managing the GUI
 - There is no good alternative that would provide all these benefits (don't get
   me started on qt - try using their designer)
 - The users don't care about the technology you use to build your app

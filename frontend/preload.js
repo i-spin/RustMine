@@ -4,6 +4,8 @@ const backend = require("../backend/dist/index.node");
 window.addEventListener("DOMContentLoaded", () => {
   initTranslation();
   console.log(backend.mojangAccountStatus());
+  console.log(backend.mojangSessionStatus());
+  console.log(backend.mojangTextureStatus());
 });
 
 const initTranslation = () => {

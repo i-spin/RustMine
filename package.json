@@ -11,7 +11,9 @@
     "electron-reloader": "^1.2.1"
   },
   "scripts": {
-    "dev": "electron .",
-    "pack": "electron-builder -mwl"
+    "dev": "yarn compile-backend && yarn run-electron",
+    "pack": "electron-builder -mwl",
+    "run-electron": "electron .",
+    "compile-backend": "cd backend && yarn build-release"
   }
 }
