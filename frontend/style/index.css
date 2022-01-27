@@ -2,8 +2,8 @@
 @import url("./palette.css");
 
 html {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--rose-main-base);
+  color: var(--rose-main-text);
   font-family: "Oxygen";
   height: 100vh;
 }
@@ -31,7 +31,7 @@ body {
   border-top: var(--foreground) 3px solid;
 }
 
-.controls {
+#controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,9 +43,34 @@ body {
 }
 
 .button:hover {
-  background-color: var(--color1);
+  background-color: var(--rose-main-muted);
 }
 
 #instances {
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+#statuses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#dialogue {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  z-index: 100;
+
+  width: 30vw;
+}
+
+.error {
+  margin: 0;
+  margin-bottom: 1vh;
+  border: 3px solid var(--rose-main-love);
+  /* background-color: var(--rose-main-love); */
+  backdrop-filter: blur(10px);
+  color: var(--rose-main-love);
   padding: 1vh 1vw 1vh 1vw;
 }

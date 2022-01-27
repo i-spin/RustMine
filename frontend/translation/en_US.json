@@ -4,5 +4,7 @@
     "settings": "Settings",
     "help": "Help",
     "update": "Update",
-    "account": "Your Account"
+    "account": "Your Account",
+    "operational": "Operational",
+    "broken": "Broken"
 }

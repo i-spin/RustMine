@@ -29,7 +29,7 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
   - [ ] Multiple Instances
   - [ ] Instance Specific Settings
   - [ ] Multiple Accounts
-  - [ ] Mojang Status
+  - [x] Mojang Status
   - [ ] Auto Update
 
 ## Development
