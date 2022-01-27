@@ -8,6 +8,9 @@ on:
 
   workflow_dispatch:
 
+env:
+  CARGO_TERM_COLOR: always
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.5.1
-
+      
+      - uses: actions/cache@v2.1.7
+        with:
+         path: './backend/target/*'
+         key: ${{ runner.os }}-rust-${{ hashFiles('**/Cargo.*') }}
+         restore-keys: ${{ runner.os }}-rust-
+     
       # Runs a single command using the runners shell
       - name: Install Dependencies
         run: |
@@ -27,11 +36,11 @@ jobs:
         run: |
           yarn compile-backend
 
-      - name: Package App
-        run: |
-          ./node_modules/.bin/electron-builder -l
+#       - name: Package App
+#         run: |
+#           ./node_modules/.bin/electron-builder -l
 
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.3.1
-        with:
-          path: ./dist/*.AppImage
+#       - name: Upload a Build Artifact
+#         uses: actions/upload-artifact@v2.3.1
+#         with:
+#           path: ./dist/*.AppImage
