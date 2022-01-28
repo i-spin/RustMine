@@ -1,5 +1,6 @@
 @import url("../static/font/Oxygen.css");
 @import url("./palette.css");
+@import url("./keyframes.css");
 
 html {
   background-color: var(--rose-main-base);
@@ -66,11 +67,23 @@ body {
 }
 
 .error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   margin: 0;
   margin-bottom: 1vh;
-  border: 3px solid var(--rose-main-love);
-  /* background-color: var(--rose-main-love); */
-  backdrop-filter: blur(10px);
-  color: var(--rose-main-love);
   padding: 1vh 1vw 1vh 1vw;
+
+  border: 3px solid var(--rose-main-love);
+  color: var(--rose-main-love);
+
+  backdrop-filter: blur(10px);
+
+  animation-duration: 500ms;
+  animation-name: slidein;
+}
+
+code {
+  font-size: 15px;
 }

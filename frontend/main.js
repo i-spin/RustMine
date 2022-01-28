@@ -4,14 +4,32 @@ require("electron-reloader")(module);
 const fs = require("fs");
 
 const createWindow = () => {
+  const splash = new BrowserWindow({
+    width: 300,
+    height: 300,
+    transparent: false,
+    frame: false,
+    alwaysOnTop: true,
+    resizable: false,
+  });
+
+  splash.loadFile(path.join(__dirname, "splash.html"));
+  splash.center();
+
   const window = new BrowserWindow({
     width: 1200,
     height: 1000,
+    show: false,
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, "script", "preload.js"),
     },
   });
   window.loadFile("./frontend/index.html");
+
+  setTimeout(() => {
+    splash.close();
+    window.show();
+  }, 5000);
 };
 
 app.whenReady().then(() => {

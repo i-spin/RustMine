@@ -1,0 +1,25 @@
+@import url("../static/font/Oxygen.css");
+@import url("./palette.css");
+
+html {
+  background-color: var(--rose-main-base);
+}
+
+#splash-content {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 30%;
+  margin: 15vh 0 15vh 0;
+}
+
+p {
+  font-family: "Oxygen";
+  color: var(--rose-main-text);
+  font-size: 20px;
+}
