@@ -2,20 +2,17 @@ const backend = require("../../backend/dist/index.node");
 const translation = require("./utils/translation.js");
 
 window.addEventListener("DOMContentLoaded", () => {
-  translation.loadTranslation();
   loadStatus();
+  translation.loadTranslation();
 });
 
 const loadStatus = () => {
-  document.getElementById("mojang-account-status").innerText = statusText(
-    backend.mojangAccountStatus(),
-  );
+  statusText("mojang-account-status", backend.mojangAccountStatus);
+  statusText("mojang-session-status", backend.mojangSessionStatus);
+  statusText("mojang-texture-status", backend.mojangTextureStatus);
+};
 
-  document.getElementById("mojang-session-status").innerText = statusText(
-    backend.mojangSessionStatus(),
-  );
-
-  document.getElementById("mojang-texture-status").innerText = statusText(
-    backend.mojangTextureStatus(),
-  );
+const statusText = (id, status) => {
+  const element = document.getElementById(id);
+  element.id = status() === "" ? "operational" : "broken";
 };

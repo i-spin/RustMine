@@ -19,13 +19,6 @@ const loadTranslation = () => {
   });
 };
 
-const statusText = (status) => {
-  return status === ""
-    ? translations.get("operational")
-    : translations.get("broken");
-};
-
 module.exports = {
   loadTranslation,
-  statusText,
 };

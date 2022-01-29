@@ -26,7 +26,7 @@ const createWindow = () => {
       preload: path.join(__dirname, "script", "index.js"),
     },
   });
-  window.loadFile("./frontend/index.html");
+  window.loadFile(path.join(__dirname, "index.html"));
 
   setTimeout(() => {
     splash.close();
