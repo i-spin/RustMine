@@ -31,8 +31,9 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
   - [ ] Multiple Accounts
   - [x] Mojang Status
   - [ ] Auto Update
-  - [ ] Integrate with [mod-updater](https://github.com/sourTaste000/mod-updater/)
-  - [ ] [Animate](https://animejs.com/documentation/#lineDrawing) Splash Screen
+  - [ ] Integrate with
+        [mod-updater](https://github.com/sourTaste000/mod-updater/)
+  - [x] [Animate](https://animejs.com/documentation/#lineDrawing) Splash Screen
 
 ## Development
 

@@ -27,7 +27,7 @@ p {
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 10s ease-in forwards;
+  animation: dash 10s cubic-bezier(1, 0, 0.3, 0.7) forwards;
 }
 
 @keyframes dash {

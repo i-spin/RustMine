@@ -29,10 +29,10 @@ const createWindow = () => {
   });
   window.loadFile("./frontend/index.html");
 
-  // setTimeout(() => {
-  //   splash.close();
-  //   window.show();
-  // }, 5000);
+  setTimeout(() => {
+    splash.close();
+    window.show();
+  }, 6000);
 };
 
 app.whenReady().then(() => {

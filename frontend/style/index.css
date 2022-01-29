@@ -7,6 +7,8 @@ html {
   color: var(--rose-main-text);
   font-family: "Oxygen";
   height: 100vh;
+
+  overflow: hidden;
 }
 
 body {

@@ -26,36 +26,17 @@ const loadTranslation = () => {
 };
 
 const loadStatus = () => {
-  // TODO: PLZ FIX THIS MESS
   document.getElementById("mojang-account-status").innerText = statusText(
     backend.mojangAccountStatus(),
   );
-
-  document.getElementById("mojang-account-status").onclick = () => {
-    displayError(
-      backend.mojangAccountStatus(),
-    );
-  };
 
   document.getElementById("mojang-session-status").innerText = statusText(
     backend.mojangSessionStatus(),
   );
 
-  document.getElementById("mojang-session-status").onclick = () => {
-    displayError(
-      backend.mojangSessionStatus(),
-    );
-  };
-
   document.getElementById("mojang-texture-status").innerText = statusText(
     backend.mojangTextureStatus(),
   );
-
-  document.getElementById("mojang-texture-status").onclick = () => {
-    displayError(
-      backend.mojangTextureStatus(),
-    );
-  };
 };
 
 console.log(translations);

@@ -1,19 +1,2 @@
-const anime = require("animejs");
-
 document.addEventListener("DOMContentLoaded", function () {
-  //
 });
-
-// anime({
-//   targets: "#splash-content .line-draw .lines path",
-//   strokeDashoffset: [anime.setDashoffset, 0],
-//   easing: "easeInOutSine",
-//   duration: 1500,
-//   delay: function (el, i) {
-//     return i * 250;
-//   },
-//   direction: "alternate",
-//   loop: true,
-// });
-
-console.log("done");
