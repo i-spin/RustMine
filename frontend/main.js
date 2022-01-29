@@ -1,6 +1,5 @@
 const path = require("path");
-const { app, BrowserWindow } = require("electron");
-const fs = require("fs");
+const { app, BrowserWindow, ipcMain } = require("electron");
 
 const createWindow = () => {
   const splash = new BrowserWindow({
@@ -44,4 +43,16 @@ app.whenReady().then(() => {
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
+});
+
+ipcMain.on("window-create", (event, arg) => {
+  const window = new BrowserWindow({
+    width: 1000,
+    height: 1000,
+    webPreferences: {
+      // preload: path.join(__dirname, "script", "index.js"),
+    },
+  });
+  window.loadFile(path.join(__dirname, arg));
+  event.returnValue = "success";
 });

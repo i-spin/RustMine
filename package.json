@@ -7,13 +7,14 @@
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "electron": "^16.0.7",
-    "electron-builder": "^22.14.5"
+    "electron-builder": "^22.14.5",
+    "watch": "^1.0.2"
   },
   "scripts": {
-    "dev": "yarn compile-backend && yarn run-electron",
     "pack": "./node_modules/.bin/electron-builder -mwl",
     "run-electron": "electron .",
-    "compile-backend": "cd backend && yarn build-release"
+    "compile-backend": "cd backend && yarn build-release",
+    "dev": "watch 'yarn compile-backend && yarn run-electron' ./backend/src ./frontend"
   },
   "dependencies": {},
   "build": {
