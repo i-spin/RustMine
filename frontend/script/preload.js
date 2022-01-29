@@ -26,7 +26,7 @@ const loadTranslation = () => {
 };
 
 const loadStatus = () => {
-  // TODO:
+  // TODO: PLZ FIX THIS MESS
   document.getElementById("mojang-account-status").innerText = statusText(
     backend.mojangAccountStatus(),
   );

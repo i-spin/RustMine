@@ -11,6 +11,9 @@ const createWindow = () => {
     frame: false,
     alwaysOnTop: true,
     resizable: false,
+    webPreferences: {
+      preload: path.join(__dirname, "script", "splash.js"),
+    },
   });
 
   splash.loadFile(path.join(__dirname, "splash.html"));
@@ -26,10 +29,10 @@ const createWindow = () => {
   });
   window.loadFile("./frontend/index.html");
 
-  setTimeout(() => {
-    splash.close();
-    window.show();
-  }, 5000);
+  // setTimeout(() => {
+  //   splash.close();
+  //   window.show();
+  // }, 5000);
 };
 
 app.whenReady().then(() => {
