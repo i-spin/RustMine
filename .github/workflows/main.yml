@@ -18,7 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.5.1
-     
+
+      - name: Cache
+        uses: actions/cache@v2.1.7
+        with:
+          path: ./backend/target/**
+          key: backend-build-rustmine
+
       - name: Install Dependencies
         run: |
           yarn
@@ -27,9 +33,3 @@ jobs:
       - name: Build Backend
         run: |
           yarn compile-backend
-      
-      - name: Cache
-        uses: actions/cache@v2.1.7
-        with:
-          path: ./backend/target/**
-          key: backend-build-rustmine
