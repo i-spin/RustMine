@@ -23,7 +23,7 @@ const createWindow = () => {
     height: 1000,
     show: false,
     webPreferences: {
-      preload: path.join(__dirname, "script", "preload.js"),
+      preload: path.join(__dirname, "script", "index.js"),
     },
   });
   window.loadFile("./frontend/index.html");

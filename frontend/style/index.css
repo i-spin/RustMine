@@ -47,33 +47,3 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
-#dialogue {
-  position: absolute;
-  top: 1vh;
-  right: 1vw;
-  z-index: 100;
-
-  width: 30vw;
-}
-
-.error {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  margin: 0;
-  margin-bottom: 1vh;
-  padding: 1vh 1vw 1vh 1vw;
-
-  border: 3px solid var(--rose-main-love);
-  color: var(--rose-main-love);
-
-  backdrop-filter: blur(10px);
-
-  animation: slidein 500ms;
-}
-
-code {
-  font-size: 15px;
-}
