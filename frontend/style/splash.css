@@ -1,9 +1,4 @@
-@import url("../static/font/Oxygen.css");
-@import url("./palette.css");
-
-html {
-  background-color: var(--rose-main-base);
-}
+@import url(./root.css);
 
 #splash-content {
   padding: 5%;
@@ -19,19 +14,12 @@ svg {
 }
 
 p {
-  font-family: "Oxygen";
-  color: var(--rose-main-text);
   font-size: 20px;
 }
 
 .path {
+  stroke: var(--rose-main-iris);
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 10s cubic-bezier(1, 0, 0.3, 0.7) forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
 }

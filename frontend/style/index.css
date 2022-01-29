@@ -1,15 +1,4 @@
-@import url("../static/font/Oxygen.css");
-@import url("./palette.css");
-@import url("./keyframes.css");
-
-html {
-  background-color: var(--rose-main-base);
-  color: var(--rose-main-text);
-  font-family: "Oxygen";
-  height: 100vh;
-
-  overflow: hidden;
-}
+@import url("./root.css");
 
 body {
   display: flex;
@@ -82,8 +71,7 @@ body {
 
   backdrop-filter: blur(10px);
 
-  animation-duration: 500ms;
-  animation-name: slidein;
+  animation: slidein 500ms;
 }
 
 code {

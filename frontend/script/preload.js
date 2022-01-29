@@ -44,8 +44,7 @@ console.log(translations);
 const displayError = (info) => {
   const element = document.createElement("p");
   element.className = "error";
-  element.innerHTML =
-    /*html*/ `<code>${info}</code><br>Check the console for more info!`;
+  element.innerHTML = /*html*/ `<code>${info}</code>`;
   document.getElementById("dialogue").appendChild(element);
   console.error(info);
   setTimeout(() => {

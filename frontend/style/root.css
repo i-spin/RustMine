@@ -1,0 +1,10 @@
+@import url("../static/font/Oxygen.css");
+@import url("./rose-pine/moon.css");
+@import url("./keyframes.css");
+
+html {
+  font-family: "Oxygen";
+  background-color: var(--rose-main-base);
+  color: var(--rose-main-text);
+  overflow: hidden;
+}
