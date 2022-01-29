@@ -7,8 +7,7 @@
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "electron": "^16.0.7",
-    "electron-builder": "^22.14.5",
-    "electron-reloader": "^1.2.1"
+    "electron-builder": "^22.14.5"
   },
   "scripts": {
     "dev": "yarn compile-backend && yarn run-electron",
@@ -16,5 +15,13 @@
     "run-electron": "electron .",
     "compile-backend": "cd backend && yarn build-release"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "build": {
+    "appId": "com.sourTaste000.rustmine",
+    "productName": "rustmine",
+    "files": [
+      "!**/target/*",
+      "!**/.github/*"
+    ]
+  }
 }
