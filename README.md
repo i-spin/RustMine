@@ -6,17 +6,18 @@
 
 A Minecraft launcher written in Rust, with an Electron frontend.
 
+---
+
 ## Why?
 
 I thought it would be fun to use two of my most familiar languages, Rust and
 JavaScript, to create a Minecraft launcher. I will most likely to _not_ finish
 this program, since I only did this for fun.
 
-## What is the plan?
-
-I will create the UI using [Electron](https://www.electronjs.org/). For the
-backend actions, such as downloading libraries, listing versions, etc, I will
+I will create the UI using [Electron](https://www.electronjs.org/) and I will
 use Rust with [Neon Bindings](https://neon-bindings.com/).
+
+---
 
 ## Roadmap
 
@@ -37,7 +38,9 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
   - [ ] Auto Update
   - [ ] Integrate with
         [mod-updater](https://github.com/sourTaste000/mod-updater/)
-  - [x] [Animate](https://animejs.com/documentation/#lineDrawing) Splash Screen
+  - [x] Animate Splash Screen
+
+---
 
 ## Development
 
@@ -47,8 +50,13 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
    the backend.
 4. Run `yarn dev` in the root folder of this project to start the app.
 
+---
+
 ## What if I am religiously opposed to using Electron?
 
+[TL;DR](https://youtu.be/jyTA33HQZLA?t=95)
+
+<details>
 Then you are not the target audience of this program. See
 [PolyMC](https://github.com/PolyMC/PolyMC) for a similar program that will not
 taint your machine with a library you happen to dislike.
@@ -63,9 +71,11 @@ has improved dramatically, but the meme stuck). The programming world is filled
 with people who read angry rants about why library X or Y sucks and you should
 hate it, then repeat whatever they remember because they think whining makes
 them seem smart, without critically examining whether it makes sense or not.
+</details>
 
 ## The reasons behind Electron
 
+<details>
 - It's fun to develop for
 - It uses as much resources as a single browser tab, if used in a sane way
 - It provides a low barrier to entry for contributors
@@ -78,10 +88,9 @@ them seem smart, without critically examining whether it makes sense or not.
 With experience comes a certain appreciation of tradeoffs you take when building
 software and while Electron is not the perfect solution for every use case, it's
 certainly good enough for what I was trying to achieve with this app.
+</details>
 
-### Why not tauri???
-
-[*](https://youtu.be/jyTA33HQZLA?t=95)
+---
 
 ## License
 
