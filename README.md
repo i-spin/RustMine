@@ -1,9 +1,10 @@
 # RustMine
 
-A Minecraft launcher written in Rust, with an Electron frontend.
+[![wakatime](https://wakatime.com/badge/user/32a4f5e7-c047-422a-9e96-26bc31c49a33/project/dfe86c46-be66-418b-93c4-28d77f5ff24b.svg)](https://wakatime.com/badge/user/32a4f5e7-c047-422a-9e96-26bc31c49a33/project/dfe86c46-be66-418b-93c4-28d77f5ff24b)
+[![CodeFactor](https://www.codefactor.io/repository/github/sourtaste000/rustmine/badge)](https://www.codefactor.io/repository/github/sourtaste000/rustmine)
+[![CI](https://github.com/sourTaste000/RustMine/actions/workflows/main.yml/badge.svg?style=flat-square)](https://github.com/sourTaste000/RustMine/actions/workflows/main.yml)
 
-[![wakatime](https://wakatime.com/badge/user/32a4f5e7-c047-422a-9e96-26bc31c49a33/project/dfe86c46-be66-418b-93c4-28d77f5ff24b.svg?style=for-the-badge)](https://wakatime.com/badge/user/32a4f5e7-c047-422a-9e96-26bc31c49a33/project/dfe86c46-be66-418b-93c4-28d77f5ff24b)
-[![CodeFactor](https://www.codefactor.io/repository/github/sourtaste000/rustmine/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/sourtaste000/rustmine)
+A Minecraft launcher written in Rust, with an Electron frontend.
 
 ## Why?
 
