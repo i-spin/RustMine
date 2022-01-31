@@ -1,10 +1,10 @@
 const backend = require("../../backend/dist/index.node");
-const translation = require("./utils/translation.js");
-const { ipcRenderer } = require("electron");
+const { loadTranslation } = require("./utils/translation.js");
+const { openWindowOnButton } = require("./utils/ipc.js");
 
 window.addEventListener("DOMContentLoaded", () => {
   loadStatus();
-  translation.loadTranslation();
+  loadTranslation();
   setupOnclick();
 });
 
@@ -15,12 +15,7 @@ const loadStatus = () => {
 };
 
 const setupOnclick = () => {
-  document.getElementById("settings").onclick = () => {
-    ipcRenderer.sendSync(
-      "window-create",
-      "./html/setting.html",
-    );
-  };
+  openWindowOnButton("settings", ["./html/settings.html", "settings.js"]);
 };
 
 const statusText = (id, status) => {

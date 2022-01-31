@@ -47,12 +47,12 @@ app.on("window-all-closed", () => {
 
 ipcMain.on("window-create", (event, arg) => {
   const window = new BrowserWindow({
-    width: 1000,
-    height: 1000,
+    width: 900,
+    height: 800,
     webPreferences: {
-      // preload: path.join(__dirname, "script", "index.js"),
+      preload: path.join(__dirname, "script", arg[1]),
     },
   });
-  window.loadFile(path.join(__dirname, arg));
+  window.loadFile(path.join(__dirname, arg[0]));
   event.returnValue = "success";
 });
