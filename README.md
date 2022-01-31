@@ -2,6 +2,8 @@
 
 A Minecraft launcher written in Rust, with an Electron frontend.
 
+[![wakatime](https://wakatime.com/badge/user/32a4f5e7-c047-422a-9e96-26bc31c49a33/project/dfe86c46-be66-418b-93c4-28d77f5ff24b.svg?style=for-the-badge)](https://wakatime.com/badge/user/32a4f5e7-c047-422a-9e96-26bc31c49a33/project/dfe86c46-be66-418b-93c4-28d77f5ff24b)
+
 ## Why?
 
 I thought it would be fun to use two of my most familiar languages, Rust and
