@@ -22,7 +22,8 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
 ## Roadmap
 
 - [ ] Frontend
-  - [ ] Main Page
+  - [x] Main Page
+  - [ ] Settings Page
 - [ ] Backend
   - [ ] Mojang Login
   - [ ] Microsoft Login
