@@ -59,9 +59,9 @@ use Rust with [Neon Bindings](https://neon-bindings.com/).
 
 <details>
 Then you are not the target audience of this program. See
-[PolyMC](https://github.com/PolyMC/PolyMC) for a similar program that will not
-taint your machine with a library you happen to dislike.
-
+<a href="https://github.com/PolyMC/PolyMC">PolyMC</a>
+for a similar program that will not taint your machine with a library you happen to dislike.
+<br>
 It's clear that highly polarized opinions about languages and frameworks are
 characteristic of people who lack real-world programming experience and are more
 interested in building an identity than creating computer programs. When pressed
