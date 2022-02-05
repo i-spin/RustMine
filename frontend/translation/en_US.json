@@ -1,10 +1,10 @@
 {
-    "add-instance": "Add Instance",
-    "folders": "Folders",
-    "settings": "Settings",
-    "help": "Help",
-    "update": "Update",
-    "account": "Your Account",
-    "operational": "Operational",
-    "broken": "Broken"
+    "add-instance": " Add Instance",
+    "folders": " Folders",
+    "settings": " Settings",
+    "help": " Help",
+    "update": " Update",
+    "account": " Account",
+    "operational": " Operational",
+    "broken": " Broken"
 }

@@ -1,9 +1,9 @@
-@import url("../static/font/Oxygen.css");
+@import url("../static/font/Overpass.css");
 @import url("./theme-in-use.css");
 @import url("./keyframes.css");
 
 html {
-  font-family: "Oxygen";
+  font-family: "Overpass";
   background-color: var(--rose-main-base);
   color: var(--rose-main-text);
   overflow: hidden;
