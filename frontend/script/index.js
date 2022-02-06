@@ -6,12 +6,23 @@ window.addEventListener("DOMContentLoaded", () => {
   loadStatus();
   loadTranslation();
   setupOnclick();
+  tryAuthenticate();
 });
 
 const loadStatus = () => {
   statusText("mojang-account-status", backend.mojangAccountStatus);
   statusText("mojang-session-status", backend.mojangSessionStatus);
   statusText("mojang-texture-status", backend.mojangTextureStatus);
+};
+
+const tryAuthenticate = () => {
+  let username = "asdkfjhaskdlfjh";
+  let password = "alskdjfhalkdfhjaklsfhjdkljh";
+  console.log(backend.authenticate(username, password));
+};
+
+const tryInvalidate = () => {
+  backend.invalidate();
 };
 
 const setupOnclick = () => {
